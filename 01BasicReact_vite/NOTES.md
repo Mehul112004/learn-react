@@ -30,3 +30,39 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 )
 ```
 We saw the syntax of creating components and exporting of the components and this thing above👆 is the syntax of rendering the `main.jsx` file.
+
+### What is StrictMode
+
+React Strict Mode is a development tool that helps you identify potential issues in your React codebase. It is a wrapper component that can be used to highlight problems in your code early during development. When you enable Strict Mode, React will perform additional checks and give warnings for the component tree inside it.
+It also checks if there are any deprecations in your components codebase.
+
+### What is render()
+
+React render is a method that is responsible for painting the DOM.
+
+In Vite bundled apps the script is inherently linked inside the `index.html` file.
+And this render method injects all the markup inside that HTML file.
+
+### What is createRoot
+
+This method creates the root element which will contain all the components to be injected.
+
+## We can also nest components in each other as
+```
+    function Comp(){
+  return (
+    <h1>This will be the nested Component</h1>
+  )
+}
+function App() {
+
+  return (
+    <>
+    <Comp />
+   <h1>Chai aur react with vite</h1>
+   </>
+  )
+}
+export default App
+
+```
