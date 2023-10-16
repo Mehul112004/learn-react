@@ -19,3 +19,7 @@ function App(){
 }
 export default App
 ```
+
+You can import components as `<App/>`
+
+#END
