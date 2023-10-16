@@ -1,25 +1,20 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-
-let [count,setCounter] = useState(5)
+  const [count, setCounter] = useState(0);
 
   // let count=5
 
-  function addValue(){
-    if (count<=19) {
-      
-      console.log(count)
-      setCounter(count+1)
-    }
+  function addValue() {
+    setCounter(count + 1);
   }
-  const decValue=()=>{
-    if (count>=1) {
-      console.log(count)
-      setCounter(count-1)
+  const decValue = () => {
+    if (count >= 1) {
+      console.log(count);
+      setCounter(count - 1);
     }
-  }
+  };
 
   return (
     <>
@@ -30,7 +25,6 @@ let [count,setCounter] = useState(5)
       <br />
       <button onClick={decValue}>Decrease Value {count}</button>
     </>
-  )
+  );
 }
-
-export default App
+export default App;
