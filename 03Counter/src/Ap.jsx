@@ -1,17 +1,18 @@
 import { useState } from "react";
 
 function App() {
-  let [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
   const addVal = () => {
     // count++;
-    setCount(++count);
-    setCount(++count);
-    setCount(++count);
-    setCount(++count);
+    setCount(count=>count+1);
+    setCount(count=>count+1);
+    setCount(count=>count+1);
+    setCount(count=>count+1);
+    setCount(count=>count+1);
   };
   const decVal=()=>{
     // count--;
-    setCount(--count);
+    setCount(count-1);
   }
   return (
     <>
