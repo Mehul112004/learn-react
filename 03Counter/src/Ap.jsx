@@ -4,11 +4,7 @@ function App() {
   const [count, setCount] = useState(0);
   const addVal = () => {
     // count++;
-    setCount(count=>count+1);
-    setCount(count=>count+1);
-    setCount(count=>count+1);
-    setCount(count=>count+1);
-    setCount(count=>count+1);
+    setCount(count+3)
   };
   const decVal=()=>{
     // count--;
