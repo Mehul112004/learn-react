@@ -13,7 +13,7 @@ import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import User from "./Components/User/User";
-import Github,{githubInfo} from "./Github/Github";
+import Github,{githubInfo} from "./Components/Github/Github";
 
 /*const router = createBrowserRouter([
   {
